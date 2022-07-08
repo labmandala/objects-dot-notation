@@ -13,13 +13,22 @@ learning.learningGoals = [
     "Learn something new",
     "Have Fun",
     "Build JS programs"
-  ];
+];
 
-  // create an object property called category with a value
-  learning.category = "Front End Development";
+// create an object property called category with a value
+learning.category = "Front End Development";
 
-  // create another object property called topicImportance & give it a value of "High"
-  learning.topicImportance = "High";
+// create another object property called topicImportance & give it a value of "High"
+learning.topicImportance = "High";
 
-  console.log(learning);
+console.log(learning);
 
+// change value of the topic property
+learning.topic = "JavaScript";
+
+// remove second item from array
+learning.learningGoals.splice(1, 1);
+
+// log out object to check changes
+console.log(learning);
+    
