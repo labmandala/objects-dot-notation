@@ -31,4 +31,18 @@ learning.learningGoals.splice(1, 1);
 
 // log out object to check changes
 console.log(learning);
-    
+
+/* set value of topicElement variable (using innerText property) to string 
+with value of topic property using template literals and dot notation */
+topicElement.innerText = `✔️ I'm learning ${learning.topic}.`;
+
+// remove class “hide” that’s given to the topicElement
+topicElement.classList.remove("hide");
+
+/* set the innerText of the countElement to string
+with the length of the learningGoals property array */
+countElement.innerText = `✔️ I have ${learning.learningGoals.length} learning goals.`;
+
+// remove the class “hide” that’s given to countElement
+countElement.classList.remove("hide");
+
