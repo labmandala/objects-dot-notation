@@ -24,6 +24,11 @@ const learning = {
     if (this.hoursThisWeek >= this.weeklyHourGoal) {
         this.achievedStudyGoal = true;
     };
+  },
+  celebrate: function () {
+    body.classList.add("celebrate");
+    success.classList.remove("hide");
+    dance.classList.remove("hide"); 
   }
 };
 
